@@ -1,9 +1,9 @@
-//src/app/signup/page.js
 "use client";
+import { Suspense } from "react";
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function SignUpPage() {
+function SignUpForm() {
   const router = useRouter();
   const params = useSearchParams();
   const selectedPlan = params.get("plan") || "Basic";
@@ -140,5 +140,12 @@ export default function SignUpPage() {
       </div>
      
     </div>
+  );
+}
+export default function SignUpPage() {
+  return (
+    <Suspense fallback={<div>Loading signup form...</div>}>
+      <SignUpForm />
+    </Suspense>
   );
 }

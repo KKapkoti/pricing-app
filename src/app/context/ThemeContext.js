@@ -1,4 +1,4 @@
-//src/api/context/ThemeContext.js
+
 'use client'
 import { createContext, useContext, useEffect, useState } from 'react'
 

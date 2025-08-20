@@ -1,5 +1,4 @@
-//src/app/components/Navbar.jsx
-// src/app/components/Navbar.jsx
+
 "use client";
 import Link from "next/link";
 import { useTheme } from "../context/ThemeContext";

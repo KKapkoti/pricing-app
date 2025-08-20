@@ -1,4 +1,3 @@
-//src/app/page.js
 // import Link from "next/link";
 import PlanCard from "./components/PlanCard";
 import StickyCTA from "./components/StickyCTA";

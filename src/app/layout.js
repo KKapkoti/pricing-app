@@ -1,5 +1,3 @@
-//src/app/layout.js
-// src/app/layout.js
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./context/ThemeContext";
