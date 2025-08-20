@@ -21,7 +21,7 @@ export default function SignUpPage() {
   const validate = () => {
     let newErrors = {};
     if (!form.name) newErrors.name = "Full Name is required";
-    if (!form.email.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/))
+    if (!form.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
       newErrors.email = "Invalid email address";
     if (form.password.length < 6)
       newErrors.password = "Password must be at least 6 characters";
